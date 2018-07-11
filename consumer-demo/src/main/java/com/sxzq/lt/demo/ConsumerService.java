@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by july on 2018/7/11.
  */
-@FeignClient("provider-demo")
+@FeignClient(value = "provider-demo", path = "/spring")
 public interface ConsumerService {
 
-    @RequestMapping(value = "/spring/demo", method = RequestMethod.GET)
+    @RequestMapping(value = "/demo", method = RequestMethod.GET)
     String consumerDemo(@RequestParam(value = "name") String name);
 }
