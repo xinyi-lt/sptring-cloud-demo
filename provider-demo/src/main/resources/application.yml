@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: provider-demo
+#  cloud:
+#      zookeeper:
+#        connect-string: localhost:2181
+
+server:
+  port: 9002
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9001/eureka/
+
+#logging:
+#  level:
+#    root: debug

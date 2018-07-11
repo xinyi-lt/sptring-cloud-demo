@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer-feign
+
+server:
+  port: 9003
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9001/eureka/
